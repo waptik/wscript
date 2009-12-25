@@ -358,13 +358,11 @@ function get_page_metaK ( $page, $wallpaper, $category = FALSE, $member = FALSE 
 	}
 	
 	$search = array ( 
-		
-		'/\W/', 
+
 		'/,+/' 
 	);
 	$replace = array ( 
-		
-		',', 
+
 		', ' 
 	);
 	
