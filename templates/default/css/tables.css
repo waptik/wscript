@@ -1,0 +1,22 @@
+.mytables {border-collapse:collapse;background:transparent;border-left:1px solid #686868;border-right:1px solid #686868;font:0.9em/135% arial,helvetica,sans-serif;color: #fff;text-align:center;}
+.mytables td, th {padding:5px;}
+.mytables span {font-size:0.9em;color:#666}
+.mytables em {font-size:0.8em;color:#ccc;display:block}
+.mytables img {vertical-align:middle;padding-bottom:4px}
+.mytables caption {margin:0 auto;width:auto;font: italic 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;font-weight:bold;color:#666;text-align: right;}
+.mytables td a {color:#fff;border-bottom:1px dotted yellow}
+.mytables a:hover {border-bottom:1px solid yellow}
+.mytables table a:visited {font-weight:normal;color:#666;text-decoration: line-through;}
+.mytables table a:hover {border-bottom: 1px dashed #bbb;}
+.mytables thead th, .mytables tfoot th, .mytables tfoot td {background:#161616 url({template_path}images/bg_walls.gif) repeat-x;color:#fff}
+.mytables thead th a {color:#fff}
+.mytables thead th a:hover {border-bottom:1px solid yellow;color:#fff}
+.mytables tfoot td {text-align:right;background-color:#000}
+.mytables tbody th,.mytables tbody td {border-bottom: dotted 1px #333;}
+.mytables tbody th {white-space: nowrap;}
+.mytables tbody tr.selected {background: #999;}
+.mytables tbody th a {color:#333;}
+.mytables tbody tr:hover {background:#999}
+.mytables th.sortable,.mytables th.sortable-text,.mytables th.sortable-date,.mytables th.sortable-keep,.mytables th.sortable-date-dmy,.mytables th.sortable-numeric,.mytables th.sortable-currency,.mytables th.sortable-sortByTwelveHourTimestamp,.mytables th.sortable-sortIPAddress,.mytables th.sortable-sortEnglishLonghandDateFormat,.mytables th.sortable-sortScientificNotation,.mytables th.sortable-sortImage,.mytables th.sortable-sortFileSize{cursor:pointer;background: #161616 url({template_path}images/bg_walls.gif) repeat-x;padding: 6px 12px 4px 16px;}
+.mytables th.forwardSort		{background:#333 url({template_path}images/icons/arrow_down.gif) no-repeat 0 7px;}
+.mytables th.reverseSort		{background:#333 url({template_path}images/icons/arrow_up.gif) no-repeat 0 7px;}

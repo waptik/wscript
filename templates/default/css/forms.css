@@ -1,0 +1,58 @@
+form.appnitro input.text, form.appnitro textarea.medium, form.appnitro textarea.small, form.appnitro textarea.large, form.appnitro select.select {color:#ccc;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;padding:6px 2px 6px 4px!important}
+form.appnitro fieldset {-moz-border-radius-topleft: 4px;-webkit-border-radius-topleft: 4px;border-radius-topleft: 4px;-moz-border-radius-topright: 4px;-webkit-border-radius-topright: 4px;border-radius-topright: 4px;}
+fieldset		{padding:15px 5px 15px 10px;border:1px solid #000;background:#555 url({template_path}images/icons/666.gif) repeat-x top;}
+legend			{padding:0 15px 0 10px;margin-left:10px;font:bold .8em "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;font-weight:bold;color:#666;text-transform:uppercase;border:1px solid #ccc;background:#f4f4f4;letter-spacing:2px}
+.captcha		{visibility:hidden!important}
+.appnitro {font-family:Lucida Grande,Tahoma,Arial,Verdana,sans-serif;font-size:small;}
+.appnitro li {width:61%;}
+form.appnitro ul {font-size:100%;list-style-type:none;margin:0pt;padding:0pt;width:100%;}
+form.appnitro li {display:block;margin:0pt;padding:4px 5px 2px 9px;position:relative;}
+form.appnitro li:after {clear:both;content:".";display:block;height:0pt;visibility:hidden;}
+* html form.appnitro li {height:1%;}
+* html form.appnitro li.buttons {height:1%;}
+* html form.appnitro li div {}
+form.appnitro li span {color:#444444;float:left;margin:0pt 4px 0pt 0pt;padding:0pt 0pt 8px;}
+form.appnitro li div.left {display:inline;float:left;width:48%;}
+form.appnitro li div.right {display:inline;float:right;width:48%;}
+form.appnitro li div.left .medium {width:100%;}
+form.appnitro li div.right .medium {width:100%;}
+.clear {clear:both;}
+form.appnitro li div label, form.appnitro li span label {clear:both;color:#fff;display:block;font-size:9px;line-height:9px;margin:0pt;padding-top:3px;}
+.form.appnitro_description {border-bottom:1px dotted #CCCCCC;clear:both;margin:0pt 0pt 1em;}
+.form.appnitro_description[class] {display:block;}
+.form.appnitro_description h2 {clear:left;font-size:160%;font-weight:400;margin:0pt 0pt 3px;}
+.form.appnitro_description p {font-size:95%;line-height:130%;margin:0pt 0pt 12px;}
+form.appnitro hr {display:none;}
+form.appnitro li.section_break {border-top:1px dotted #CCCCCC;margin-top:9px;padding-bottom:0pt;padding-left:9px;padding-top:13px;width:97% !important;}
+form.appnitro ul li.first {border-top:medium none !important;margin-top:0pt !important;padding-top:0pt !important;}
+form.appnitro .section_break p {font-size:85%;margin:0pt 0pt 10px;}
+input.button_text {overflow:visible;padding:0pt 7px;width:auto;}
+
+form.appnitro li label.description {background:#555;border:medium none;color:#fff;display:block;font-size:95%;font-weight:700;line-height:150%;padding:0pt 0pt 1px;}
+form.appnitro li span.symbol {font-size:115%;line-height:130%;}
+form.appnitro li input.text {background:#333;border-color:#000;border-style:solid;border-width:1px;font-size:100%;margin:0pt;padding:2px 0pt;}
+form.appnitro li input.text:focus, form.appnitro li textarea.textarea:focus {border-color:#8fcbff}
+form.appnitro li input.file {background:#333;border-color:#000;border-style:solid;border-width:1px;color:#000;font-size:100%;margin:0pt;padding:2px 0pt;}
+form.appnitro li textarea.textarea {background:#333;border-color:#000;border-style:solid;border-width:1px;font-family:"Lucida Grande",Tahoma,Arial,Verdana,sans-serif;font-size:100%;margin:0pt;width:99%;}
+form.appnitro li select.select {background:#333;border-color:#000;border-style:solid;border-width:1px;color:#ccc;font-size:100%;margin:1px 0pt;padding:1px 0pt 0pt;}
+form.appnitro li input.checkbox {display:block;height:13px;line-height:1.4em;margin:6px 0pt 0pt 3px;width:13px;}
+form.appnitro li input.radio {display:block;height:13px;line-height:1.4em;margin:6px 0pt 0pt 3px;width:13px;}
+form.appnitro li label.choice {color:#fff;display:block;font-size:100%;line-height:1.4em;margin:-1.55em 0pt 0pt 25px;padding:4px 0pt 5px;width:90%;}
+form.appnitro li select.select[class] {margin:0pt;padding:1px 0pt;}
+*:first-child + html select.select[class] {margin:1px 0pt;}
+.safari select.select {font-size:120% !important;margin-bottom:1px;}
+form.appnitro li input.small {width:25%;}
+form.appnitro li select.small {width:25%;}
+form.appnitro li input.medium {width:50%;}
+form.appnitro li select.medium {width:50%;}
+form.appnitro li input.large {width:99%;}
+form.appnitro li select.large {width:99%;}
+form.appnitro li textarea.small {height:5.5em;}
+form.appnitro li textarea.medium {height:10em;}
+form.appnitro li textarea.large {height:20em;}
+form.appnitro .required {color:orange;float:none;font-weight:700;}
+form.appnitro li.highlighted {background-color:#FFF7C0;}
+form.appnitro .guidelines {background:#333 none repeat scroll 0%;border:1px solid #000;color:#ccc;font-size:80%;left:100%;line-height:130%;margin:0pt 0pt 0pt 8px;padding:8px 10px 9px;position:absolute;top:0pt;visibility:hidden;width:42%;z-index:1000;}
+form.appnitro .guidelines small {font-size:105%;}
+form.appnitro li.highlighted .guidelines {visibility:visible;}
+form.appnitro li:hover .guidelines {visibility:visible;}
