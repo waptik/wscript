@@ -24,7 +24,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' . "\n";
 	make_thumb_if_not_exists ( $entry );
 	$thumb = get_wallpaper_url_location ( $entry ) . 'thumb_' . $entry->hash . '.jpg';
 ?>
-			<description><?= do_xhtml ( '<a href="' . get_wallpaper_url ( $entry ) . '"><img src="' . $thumb . '" alt="' . $entry->file_title . ' /></a>' ); ?></description>
+			<description><?= do_xhtml ( '<a href="' . get_wallpaper_url ( $entry ) . '"><img src="' . $thumb . '" alt="' . $entry->file_title . '" /></a>' ); ?></description>
 			<pubDate><?= date ( 'r', $entry->date_added ); ?></pubDate>
 		</item>
 <?php endforeach; ?>

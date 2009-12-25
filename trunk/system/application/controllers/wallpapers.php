@@ -954,7 +954,7 @@ class Wallpapers extends Controller {
 				$tags = $title;
 			}
 
-			$title = preg_replace ( '/\d/', '', prepare_title ( $title ) );
+			$title = prepare_title ( $title );
 
 			if ( $title == '' ) {
 				$title = 'no name';

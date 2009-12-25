@@ -76,6 +76,7 @@ class Welcome extends Controller {
 		$start = ( $this->uri->segment ( 5 ) ) ? $this->uri->segment ( 5 ) : '0';
 		$type = ( $this->uri->segment ( 3 ) ) ? $this->uri->segment ( 3 ) : WALLPAPER_ORDER_TYPE;
 		$order = ( $this->uri->segment ( 4 ) ) ? $this->uri->segment ( 4 ) : WALLPAPER_DISPLAY_ORDER;
+		$query_type = $type;
 
 		if ( ! in_array ( $type, array ( 'RAND()', 'date_added', 'hits', 'rating' ) ) ) {
 			$type = 'date_added';
@@ -85,8 +86,8 @@ class Welcome extends Controller {
 			$order = 'DESC';
 		}
 		
-		if ( $type != 'RAND()' ) {
-			$type = "w.$type";
+		if ( $query_type != 'RAND()' ) {
+			$query_type = "w.$type";
 		}
 
 		$CI = &get_instance ();
@@ -113,7 +114,7 @@ class Welcome extends Controller {
 		}
 
 		$CI->pagination->add_query = ' WHERE w.active = 1 and w.parent_id = 0';
-		$CI->pagination->add_query .= " ORDER BY $type $order";
+		$CI->pagination->add_query .= " ORDER BY $query_type $order";
 		$query = $CI->pagination->getQuery ( TRUE );
 		
 		if ( $type != 'RAND()' ) {

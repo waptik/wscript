@@ -596,7 +596,7 @@ function prepare_title ( $name ) {
 }
 
 function prepare_tags ( $string ) {
-	$tags = preg_split ( '/[,\s]+/', $string );
+	$tags = array_map ( "trim", explode ( ",", $string ) );
 	$out = array ();
 	
 	foreach ( $tags as $tag ) {
