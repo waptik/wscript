@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+#	leave just a normal / (slash) if the script is installed at root level otherwise enter it's folder here ex: /wscript (! no trailing slash)
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|install|scripts|fonts|uploads|robots\.txt|sitemap\.xml|favicon\.ico)
+
+#	if wscript is installed in a subfolder, add it before index.php ex: RewriteRule ^(.*)$ /wscript/index.php?/$1 [L] otherwise leave it as is
+RewriteRule ^(.*)$ /index.php?/$1 [L]
