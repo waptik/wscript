@@ -19,6 +19,11 @@ class Update extends Controller {
         	 */
         	defined ( 'WS_VERSION' ) or define ( 'WS_VERSION', get_setting ( 'WS_VERSION' ) );
                 switch ( WS_VERSION ) {
+                	case '3.4.0 RC3'	:
+                		$this->update_to_340 ();
+                		set_setting ( 'WS_VERSION', '3.4.0' );
+                		die ( "Update performed successfully to 3.4.0" );
+                		break;
                 	case '3.3.9 RC3'	:
                 		$this->update_to_340rc3 ();
                 		set_setting ( 'WS_VERSION', '3.4.0 RC3' );
