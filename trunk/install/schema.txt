@@ -210,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `{|DBPREFIX|}wallpapers` (
 
 INSERT INTO `{|DBPREFIX|}groups` (`ID`, `title`, `description`, `login_redirect`, `logout_redirect`) VALUES (1, 'Admins', 'The admin(s) with full rights', 'admin', 'login'), (2, 'Members', 'The default members group', 'members', 'login');
 INSERT INTO `{|DBPREFIX|}users` (`ID`, `Username`, `Password`, `date_registered`, `Temp_pass`, `Temp_pass_active`, `Email`, `Active`, `Level_access`) VALUES (1, '{|ADMIN_USERNAME|}', '{|ADMIN_PASSWORD|}', {|NOW|}, NULL, 0, '{|ADMIN_EMAIL|}', 1, 1);
-INSERT INTO `{|DBPREFIX|}site_settings` (`label`,`value`) VALUES ('WS_VERSION', '3.4.0 RC3');
+INSERT INTO `{|DBPREFIX|}site_settings` (`label`,`value`) VALUES ('WS_VERSION', '3.4.0');
 INSERT INTO `{|DBPREFIX|}site_settings` (`label`,`value`) VALUES ('bg_pattern', '0.jpg');
 INSERT INTO `{|DBPREFIX|}added_permissions` (`ID`, `item_id`, `item_type`, `area`) VALUES(1, 2, 'group', 3);
 INSERT INTO `{|DBPREFIX|}permissions` (`ID`, `label`, `parent_id`, `editable`) VALUES
